@@ -11,6 +11,14 @@ module.exports = {
       is_active: 1,
       phone_no: "089628642887"
     }]);
+    await queryInterface.bulkInsert('users', [{
+      id: 1,
+      name: 'user',
+      password: await bcrypt.hash('12345678', 10),
+      email: "user@gmail.com",
+      is_active: 1,
+      phone_no: "089628642887"
+    }]);
   },
 
   async down(queryInterface, Sequelize) {

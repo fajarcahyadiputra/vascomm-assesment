@@ -6,7 +6,7 @@ Install node JS **14.17.\***, You can read the installation guide in [https://no
 
 ##### 2. create database
 
-then create your first Database name "test_rolling_glory"
+then create your first Database name "vascomm-db"
 
 ##### 3. Install Packages
 
@@ -78,8 +78,13 @@ $ pm2 start src/index.js --watch
 
 ##### 7. Finish
 
-endpoint:
-
 ```bash
+# Login
+- User:
+   - email: user@gmail.com
+   - password: 12345678
+- Admin
+   - email: admin@gmail.com
+   - password: 12345678
 # http://localhost:3000
 ```
