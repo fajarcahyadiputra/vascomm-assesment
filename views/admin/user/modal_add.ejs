@@ -1,0 +1,49 @@
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalAdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal Add Data</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form action="/admin/user" method="post">
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="form-control" id="name" >
+                </div>
+                <div class="form-group">
+                  <label for="phone_no">Nomer Telepon</label>
+                  <input type="text" name="phone_no" class="form-control" id="phone_no" >
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" class="form-control" id="email" >
+            </div>
+            <div class="form-group">
+              <label for="role">Role</label>
+              <select name="role" class="form-control" id="role">
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+              </select>
+          </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="text" name="password" class="form-control" id="password" >
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="text" name="confirmPassword" class="form-control" id="confirmPassword" >
+        </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
